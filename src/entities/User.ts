@@ -26,13 +26,13 @@ class User extends BaseEntity {
   verifiedEmail: boolean
 
   @Column({ type: 'text' })
-  userName: string
+  username: string
 
   @Column({ type: 'text', nullable: true })
   password: string
 
-  @Column({ type: 'text' })
-  profilePhoto: string
+  @Column({ type: 'text', nullable: true })
+  profilePhoto: string | null
 
   @CreateDateColumn()
   createdAt: string

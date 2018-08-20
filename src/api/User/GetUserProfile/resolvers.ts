@@ -1,6 +1,6 @@
-import User from '../../entities/User'
-import { Resolvers } from '../../types/resolvers'
-import { GetUserQueryArgs, GetUserResponse } from '../../types/graph'
+import User from '../../../entities/User'
+import { Resolvers } from '../../../types/resolvers'
+import { GetUserQueryArgs, GetUserResponse } from '../../../types/graph'
 
 const resolvers: Resolvers = {
   Query: {

@@ -5,7 +5,7 @@ import path from 'path'
 
 const allTypes: GraphQLSchema[] = fileLoader(path.join(__dirname, './api/**/*.graphql'))
 
-const allResolvers: string[] = fileLoader(path.join(__dirname, './api/**/*.resolvers.*'))
+const allResolvers: string[] = fileLoader(path.join(__dirname, './api/**/resolvers.*'))
 
 const mergedTypes = mergeTypes(allTypes)
 const mergedResolvers = mergeResolvers(allResolvers)

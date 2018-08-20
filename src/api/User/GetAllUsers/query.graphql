@@ -1,0 +1,9 @@
+type GetAllUsersResponse {
+  ok: Boolean!
+  error: String
+  user: [User]
+}
+
+type Query {
+  GetAllUsers: GetAllUsersResponse!
+}

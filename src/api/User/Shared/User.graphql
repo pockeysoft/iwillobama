@@ -2,20 +2,10 @@ type User {
   id: Int!
   email: String
   verifiedEmail: Boolean!
-  userName: String!
+  username: String!
   password: String
   profilePhoto: String
 
   createdAt: String!
   updatedAt: String
-}
-
-type GetUserResponse {
-  ok: Boolean!
-  error: String
-  user: User
-}
-
-type Query {
-  GetUser(id: Int!): GetUserResponse!
 }
